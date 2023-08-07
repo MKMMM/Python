@@ -1,0 +1,13 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: '# create a Batman here'
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8090#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 21 Apr 2023 12:36:00 UTC"
+record: -1
+submission_language: python3
