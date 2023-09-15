@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/922162/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Tue, 23 May 2023 19:40:09 UTC"
+update_date: "Tue, 05 Sep 2023 18:35:58 UTC"
 stages:
 - id: 1829
   step: 26935
@@ -22,14 +22,14 @@ stages:
   is_completed: false
 topics:
   0:
-  - title: IDE
-    theory_id: 10996
   - title: Introduction to Operating systems
     theory_id: 9704
   - title: Command line overview
     theory_id: 8977
   - title: Parameters and Options
     theory_id: 9746
+  - title: IDE
+    theory_id: 10996
   - title: Introduction to Python
     theory_id: 5204
   - title: Overview of the basic program
@@ -81,10 +81,6 @@ topics:
   - title: String formatting
     theory_id: 6037
   1:
-  - title: Computer programming
-    theory_id: 8739
-  - title: Paradigms
-    theory_id: 15860
   - title: Introduction to OOP
     theory_id: 3614
   - title: Class
@@ -132,8 +128,6 @@ topics:
   2:
   - title: Computer algorithms
     theory_id: 16547
-  - title: Immutability
-    theory_id: 7929
   - title: The big O notation
     theory_id: 16699
   - title: "Best, average and worst cases"
@@ -146,18 +140,20 @@ topics:
     theory_id: 19510
   - title: Complex constructions in pseudocode
     theory_id: 20922
-  - title: Dictionary
-    theory_id: 6481
-  - title: Set
-    theory_id: 6643
-  - title: Tuple
-    theory_id: 7462
+  - title: Immutability
+    theory_id: 7929
   - title: "Hashing: overview"
     theory_id: 9831
   - title: Hash function
-    theory_id: 10878
+    theory_id: 30143
   - title: Hash table
     theory_id: 13054
+  - title: Dictionary
+    theory_id: 6481
+  - title: Tuple
+    theory_id: 7462
+  - title: Set
+    theory_id: 6643
   - title: Hashable
     theory_id: 7823
   3:

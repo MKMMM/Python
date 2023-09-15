@@ -5,7 +5,7 @@ import csv
 import requests
 from time import sleep
 
-subscription_key = '276d33ba6a1c4bfaaa4d5cad5d65c51c'
+subscription_key = ''
 
 def get_token(subscription_key):
     fetch_token_url = 'https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issueToken'
