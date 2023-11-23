@@ -1,6 +1,6 @@
 import requests
 
-subscription_key = '276d33ba6a1c4bfaaa4d5cad5d65c51c'
+subscription_key = ''
 
 
 def get_token(subscription_key):
