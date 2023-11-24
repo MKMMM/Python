@@ -1,6 +1,4 @@
-xml
-json
-pytz~=2023.3.post1
-tqdm~=4.66.1
-psutil~=5.9.6
-lxml~=4.9.3
+lxml
+pytz
+tqdm
+psutil
