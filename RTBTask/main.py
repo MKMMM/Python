@@ -98,8 +98,8 @@ def process_xml_file(input_data, output_data):
 
 
 # Define file paths
-input_file = "C:\\dev\\Data\\RTB\\feed.xml"
-output_file = "C:\\dev\\Data\\RTB\\feed_out.xml"
+input_file = "feed.xml"
+output_file = "feed_out.xml"
 
 # Start processing data
 print(CYELLOW + "Starting..." + CEND)
@@ -121,5 +121,5 @@ memory_used = final_memory - initial_memory
 print("Active Offers: " + CGREEN + f"{active_count}" + CEND)
 print("Paused Offers: " + CGREEN + f"{paused_count}" + CEND)
 print("Processing completed in: " + CBLUE + f"{elapsed_time}" + CEND)
-print("Approximate memory used: " + CBLUE + f"{memory_used}" + "MB" + CEND)
+print("Approximate memory used: " + CBLUE + f"{memory_used:.2f}" + "MB" + CEND)
 print("Modified XML file saved to: " + CVIOLET + f"{output_file}" + CEND)
