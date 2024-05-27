@@ -74,41 +74,90 @@ komentarz
 '''
 ```
 
+### Indentacja
+
+Indentacja w Pythonie jest bardzo ważna, ponieważ określa blok kodu. W przeciwieństwie do wielu innych języków programowania, Python nie używa nawiasów klamrowych do określenia bloków kodu, a zamiast tego używa wcięć (spacji lub tabulatorów).
+
+#### Przykład:
+
+```python
+if x > 0:
+    print("x jest dodatnie")
+    if x > 10:
+        print("x jest większe niż 10")
+else:
+    print("x jest ujemne lub zerowe")
+```
+
 ### Podstawowe operatory
 
 Python obsługuje różne operatory arytmetyczne, porównania, logiczne oraz przypisania.
 
+#### Przykład operatorów arytmetycznych:
+
 ```python
-# Operator arytmetyczny
 a = 10
 b = 3
 sum = a + b
+difference = a - b
+product = a * b
+quotient = a / b
+modulus = a % b
+```
 
-# Operator porównania
+#### Przykład operatorów porównania:
+
+```python
 is_equal = (a == b)
+is_not_equal = (a != b)
+is_greater = (a > b)
+is_less = (a < b)
+is_greater_equal = (a >= b)
+is_less_equal = (a <= b)
+```
 
-# Operator logiczny
-result = (a > b) and (b < 5)
+#### Przykład operatorów logicznych:
+
+```python
+result_and = (a > b) and (b < 5)
+result_or = (a > b) or (b > 5)
+result_not = not (a > b)
 ```
 
 ### Struktury danych
 
 Python ma różne wbudowane struktury danych, takie jak listy, krotki, słowniki i zbiory.
 
+#### Lista:
+
 ```python
-# Lista
 fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+first_fruit = fruits[0]
+```
 
-# Krotka
+#### Krotka:
+
+```python
 coordinates = (10.0, 20.0)
+x_coord = coordinates[0]
+```
 
-# Słownik
+#### Słownik:
+
+```python
 person = {"name": "Alice", "age": 25}
+person["city"] = "Warszawa"
+name = person["name"]
+```
 
-# Zbiór
+#### Zbiór:
+
+```python
 colors = {"red", "green", "blue"}
+colors.add("yellow")
 ```
 
 ## Podsumowanie
 
-W tej sekcji omówiliśmy podstawy Pythona, w tym instalację, podstawową składnię, komentarze oraz struktury danych. Python jest potężnym językiem programowania, który jest łatwy do nauki i wszechstronny w zastosowaniach.
+W tej sekcji omówiliśmy podstawy Pythona, w tym instalację, podstawową składnię, komentarze, indentację oraz struktury danych. Python jest potężnym językiem programowania, który jest łatwy do nauki i wszechstronny w zastosowaniach.
