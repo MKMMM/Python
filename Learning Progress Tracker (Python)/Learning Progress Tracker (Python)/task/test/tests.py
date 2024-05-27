@@ -1,3 +1,6 @@
+import codecs
+import sys
+
 from hstest.dynamic.dynamic_test import dynamic_test
 from hstest.stage_test import *
 import re
@@ -7,7 +10,7 @@ import numpy as np
 
 CheckResult.correct = lambda: CheckResult(True, '')
 CheckResult.wrong = lambda feedback: CheckResult(False, feedback)
-
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 
 def any_missing_keywords(output: str, *keywords: str):
     tokens = re.split("\\W+", output.lower())
@@ -201,6 +204,9 @@ class LearningProgressTrackerTest(StageTest):
         ["name surname email@e@mail.xyz", "Incorrect email."]
     ]
     incorrect_points = ["", "-1 1 1 1", "1 1 2 A", "1 1 1", "1 1 1 1 1", "-1 -1 -1 -1", "2.5 2.5 2.4 1.8"]
+
+    def __init__(self):
+        super().__init__(source='task.py')
 
     @dynamic_test(order=1)
     def test_and_exit(self):
