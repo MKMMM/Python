@@ -290,6 +290,55 @@ print(zlozona_stopa_procentowa(1000, 0.05, 3, 4))
 
 Wynik: `1161.181`
  
+
+# Christmas Tree Function in Python
+
+This function prints a simple Christmas tree with "*" characters and one "#" character as the trunk. The function takes a parameter `height` which signifies the height of the tree.
+
+## Python Function
+
+```python
+def print_christmas_tree(height):
+    """
+    Function to print a simple Christmas tree with "*" characters
+    and one "#" character at the bottom as the trunk.
+    
+    Parameters:
+    height (int): The height of the Christmas tree (number of levels).
+    """
+    
+    # Loop through each level of the tree
+    for i in range(height):
+        # Create the string for the current level
+        level = ' ' * (height - i - 1) + '*' * (2 * i + 1)
+        print(level)
+    
+    # Print the trunk of the tree
+    trunk = ' ' * (height - 1) + '#'
+    print(trunk)
+
+# Example usage:
+print_christmas_tree(5)
+
+# Example output:
+
+    *
+   ***
+  *****
+ *******
+*********
+    #
+
+# Example analysis:
+
+    *       (4 spaces + 1 star)
+   ***      (3 spaces + 3 stars)
+  *****     (2 spaces + 5 stars)
+ *******    (1 space + 7 stars)
+*********   (0 spaces + 9 stars)
+    #       (4 spaces + 1 hash)
+
+
 ## Podsumowanie
 
 W tej sekcji omówiliśmy podstawowe konstrukcje programistyczne w Pythonie, takie jak warunki, pętle oraz funkcje. Dzięki tym narzędziom możemy tworzyć złożone programy w sposób bardziej uporządkowany i efektywny.
