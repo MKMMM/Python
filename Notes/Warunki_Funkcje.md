@@ -291,36 +291,36 @@ print(zlozona_stopa_procentowa(1000, 0.05, 3, 4))
 Wynik: `1161.181`
  
 
-# Christmas Tree Function in Python
+# Choinka w Pythonie
 
-This function prints a simple Christmas tree with "*" characters and one "#" character as the trunk. The function takes a parameter `height` which signifies the height of the tree.
-
-## Python Function
+Ta funkcja drukuje prostą choinkę z znakami "*" i jednym znakiem "#" jako pień. Funkcja przyjmuje parametr `height`, który oznacza wysokość choinki.
 
 ```python
-def print_christmas_tree(height):
-    """
-    Function to print a simple Christmas tree with "*" characters
-    and one "#" character at the bottom as the trunk.
+def drukuj_choinke(height):
+    # Funkcja do drukowania prostej choinki z znakami "*"
+    # i jednym znakiem "#" na dole jako pień.
     
-    Parameters:
-    height (int): The height of the Christmas tree (number of levels).
-    """
+    # Parametry:
+    # height (int): Wysokość choinki (liczba poziomów).
     
-    # Loop through each level of the tree
-    for i in range(height):
-        # Create the string for the current level
-        level = ' ' * (height - i - 1) + '*' * (2 * i + 1)
-        print(level)
+    # Przechodzimy przez każdy poziom choinki
+    for index in range(height):
+        # Drukuj wycentrowane spacje
+        # Numer spacji do wydrukowania to (height - indeks - 1)
+        print(' ' * (height - index - 1), end='')
+        
+        # Drukuj liczbe "*" dla danego poziomu (indeks)
+        # Liczba "*" do wydrukowania to (2 * indeks + 1)
+        print('*' * (2 * index + 1))
     
-    # Print the trunk of the tree
-    trunk = ' ' * (height - 1) + '#'
-    print(trunk)
+    # Drukuj pieniek na dole
+    # Pieniek jest na środku, wiec wydrukuj (height - 1) spacji oraz symbol "#"
+    print(' ' * (height - 1) + '#')
 
-# Example usage:
-print_christmas_tree(5)
+# Korzystanie z Funkcji:
+drukuj_choinke(5)
 
-# Example output:
+# Przykład wyniku:
 
     *
    ***
@@ -329,14 +329,14 @@ print_christmas_tree(5)
 *********
     #
 
-# Example analysis:
+# Analiza wyniku:
 
-    *       (4 spaces + 1 star)
-   ***      (3 spaces + 3 stars)
-  *****     (2 spaces + 5 stars)
- *******    (1 space + 7 stars)
-*********   (0 spaces + 9 stars)
-    #       (4 spaces + 1 hash)
+    *       (4 spacje + 1 gwiazdka)
+   ***      (3 spacje + 3 gwiazdki)
+  *****     (2 spacje + 5 gwiazdek)
+ *******    (1 spacja + 7 gwiazdek)
+*********   (0 spacji + 9 gwiazdek)
+    #       (4 spacje + 1 hash)
 
 
 ## Podsumowanie
